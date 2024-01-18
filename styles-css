@@ -1,97 +1,83 @@
-/* Custom Styles */
+element.style {
+}
+@media (min-width: 768px)
+.col-md-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
 body {
     background: linear-gradient(to bottom, #001f3f, #003366);
     color: #fff;
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
-
-#left-sidebar {
-    width: 250px;
-    background-color: #0d47a1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	justify-content:centre;
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
-
-.left-sidebar-item {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #1565c0;
-    border-radius: 5px;
-    cursor: pointer;
-	color:white;
-background-color:#191970;}
-	#navy{color:#191970; 
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
-
-.module {
-    margin-bottom: 15px;
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
 }
-
-.module h3 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
-#main-content {
-    width: 75%;
-    padding: 20px;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
-#main-content-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#module-name-input {
-    width: 200px;
-}
-
-.module-container {
-    background-color: #263238;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.module-container h2 {
-    color: #64b5f6;
-}
-
-/* Bootstrap Overrides */
-.bg-dark {
-    background-color: #001f3f !important;
-}
-
-.bg-light {
-    background-color: #ffffff !important;
-}
-
-.text-white {
-    color: #ffffff !important;
-}
-
-.text-center {
-    text-align: center !important;
-}
-
-.py-3 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-}
-
-.py-4 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-}
-
-.mt-4 {
-    margin-top: 1.5rem !important;
-}
-
-/* Add more Bootstrap classes or overrides as needed */
